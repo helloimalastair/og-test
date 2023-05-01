@@ -1,0 +1,22 @@
+{
+	"name": "og-image-test",
+	"type": "module",
+	"version": "0.0.0",
+	"devDependencies": {
+		"@cloudflare/workers-types": "^3.17.0",
+		"@types/react": "^18.0.21",
+		"react": "^18.2.0",
+		"typescript": "^4.8.4"
+	},
+	"private": true,
+	"scripts": {
+		"build": "esbuild src/index.ts --bundle --outdir=dist --format=esm --target=es2020 --sourcemap --loader:.wasm=file --loader:.ttf=file",
+		"start": "wrangler dev -l --persist",
+		"wangler": "wrangler"
+	},
+	"dependencies": {
+		"@resvg/resvg-wasm": "^2.1.0",
+		"esbuild": "^0.15.11",
+		"yoga-wasm-web": "^0.1.2"
+	}
+}

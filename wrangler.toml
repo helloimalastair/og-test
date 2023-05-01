@@ -1,0 +1,10 @@
+name = "zinnia"
+main = "src/index.ts"
+usage_model = "unbound"
+compatibility_date = "2022-10-15"
+
+route = { pattern = "blog-og.cloudflare.community", custom_domain = true }
+
+kv_namespaces = [
+	{ binding = "KV", id = "b54534bcb1b249249357548d0fe65076", preview_id = "b54534bcb1b249249357548d0fe65076" },
+]
